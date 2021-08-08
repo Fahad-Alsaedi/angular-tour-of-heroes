@@ -8,9 +8,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MessagesComponent } from './messages/messages.component';
 import { HeroesModule } from './heroes/heroes.module';
-import { DashboardModule } from './dashboard/dashboard.module';
-import { HeroDetailModule } from './hero-detail/hero-detail.module';
-  
 @NgModule({
   declarations: [
     AppComponent,
