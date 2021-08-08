@@ -10,7 +10,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { HeroesModule } from './heroes/heroes.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { HeroDetailModule } from './hero-detail/hero-detail.module';
-
+  
 @NgModule({
   declarations: [
     AppComponent,
