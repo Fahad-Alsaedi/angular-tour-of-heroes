@@ -14,6 +14,7 @@ export class HeroesComponent implements OnInit {
   constructor(private heroService: HeroService) { }
 
   ngOnInit() {
+  console.log('look here');
     this.getHeroes();
   }
 

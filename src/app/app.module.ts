@@ -21,9 +21,6 @@ import { HeroDetailModule } from './hero-detail/hero-detail.module';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    HeroesModule,
-    HeroDetailModule,
-    DashboardModule,
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
     

@@ -11,7 +11,7 @@ import { HeroeDetailRoutingModule } from "./heroDetail-routing.moddule";
     declarations:[
         HeroDetailComponent,
     ],
-    imports:[RouterModule, CommonModule ,BrowserModule,FormsModule,HeroeDetailRoutingModule],
+    imports:[RouterModule, CommonModule ,FormsModule,HeroeDetailRoutingModule],
     exports:[
         HeroDetailComponent,
     ],
