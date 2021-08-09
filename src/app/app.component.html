@@ -1,8 +1,23 @@
-<h1>{{title}}</h1>
-<nav>
-  <a routerLink="/dashboard">Dashboard</a>
-  <a routerLink="/heroes">Heroes</a>
-</nav>
+<nav class="nav">
 
+
+
+  <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+</nav>
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" routerLink="/dashboard">Dashboard</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/heroes">Heroes</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/register">Register</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  </li>
+</ul>
+<h1>{{title}}</h1>
 <router-outlet></router-outlet>
 <app-messages></app-messages>

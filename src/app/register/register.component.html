@@ -1,0 +1,77 @@
+
+ <div class="contact-form-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+<form (ngSubmit)="onSubmit(form)" #form="ngForm">
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+        <label class="form-label" for="form1Example1">Email address</label>
+      <input type="email" id="form1Example1" class="form-control" 
+      ngModel
+      name="email"
+      email
+      required
+      #email="ngModel"
+      />
+      <span class="help-block" *ngIf="!email.valid && email.touched">Please enter a valid email</span>
+
+    </div>
+  
+    <!-- Password input -->
+    <div class="form-outline mb-4">
+        <label class="form-label" for="form1Example2">Password</label>
+      <input type="password" id="form1Example2" class="form-control" 
+      ngModel
+      name="password"
+      password
+      minlength=8
+      required
+      #password="ngModel"
+     
+      />
+      <span class="help-block" *ngIf="!password.valid && password.touched">Please enter a valid Password</span>
+
+    </div>
+  
+    <!-- 2 column grid layout for inline styling -->
+    <div class="row mb-4">
+      <div class="col d-flex justify-content-center">
+        <!-- Checkbox -->
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="form1Example3"
+            [ngModel]="default"
+            name="checked"
+            checked
+          />
+          <label class="form-check-label" for="form1Example3"> Remember me </label>
+        </div>
+      </div>
+  
+      <div class="col">
+        <!-- Simple link -->
+        <a href="#!">Forgot password?</a>
+      </div>
+    </div>
+  <div class="radio" *ngFor="let gender of genders">
+      <label>
+      <input
+      type ="radio"
+      name="gender"
+      ngModel
+      [value]="gender"/>
+      {{gender}}
+    </label>
+  </div>
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-primary btn-block" [disabled]="!form.valid">{{signMode ? 'Login':'Sign in' }}</button> | 
+    <button type="button" class="btn btn-primary btn-block" (click) ="switchMode()" >switch to {{signMode ? 'Sign Up': 'Login'}}</button>
+  </form>
+</div>
+</div>
+</div>
+</div>
