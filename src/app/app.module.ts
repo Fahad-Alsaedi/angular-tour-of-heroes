@@ -7,11 +7,12 @@ import { InMemoryDataService } from './in-memory-data.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MessagesComponent } from './messages/messages.component';
-
+import { LoginComponent } from './login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
     MessagesComponent,
+    LoginComponent,
     
   ],
   imports: [
